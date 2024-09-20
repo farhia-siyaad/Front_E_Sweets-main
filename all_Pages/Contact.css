@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Freehand&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --color-teel: #274c5b;
+  --color-green: #7eb693;
+  --color-yellow: #efd372;
+  --color-grey: #d4d4d4;
+  --color-white: #f9f8f8;
+  --color-dark: #1b2427;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-dark);
+  background-color: rgb(82, 80, 79);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
+}
+.section_header_title_2 {
+  font-family: "Freehand", cursive;
+}
+section {
+  margin-top: 10rem;
+}
+
+/* subscibe */
+.sub_container {
+  background-image: url(./IMG/68.jpg);
+  background-size: cover;
+  padding: 9rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2rem;
+}
+.subscribe {
+  margin-top: 15rem;
+}
+.subscribe_text {
+  font-size: 4rem;
+}
+.form_input {
+  padding: 1.5rem 2rem;
+  outline: none;
+  border: none;
+  width: 30rem;
+  border-radius: 1rem;
+}
+.form_btn {
+  outline: none;
+  border: none;
+  padding: 1.6rem 3.5rem;
+  background-color: yellow;
+  color: var(--color-black);
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.footer_text {
+  padding: 1.3rem 0rem;
+  margin-left: 560px;
+  color: white;
+  margin-top: 10px;
+}
+
+@media (max-width:576px) {
+    .footer_text {
+        margin-left: 100px;
+        color: white;
+        margin-top: 10px;
+      }
+}
+/* header-Page */
+.mini_header {
+  width: 100%;
+  height: 50vh;
+
+}
+
+.mini_header_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mini_header_title {
+  font-size: 3.6rem;
+}
+
+/* cont-Header */
+.contact_header {
+  background-image: url(./IMG/66.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form_top {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 3rem;
+}
+.form_group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+label {
+  margin-bottom: 1.2rem;
+}
+.form_input {
+  width: 100%;
+}
+.form_text {
+  width: 100%;
+  margin-top: 3rem;
+  outline: none;
+  padding: 1.5rem;
+  height: 20rem;
+  border: none;
+  border-radius: 1.2rem;
+  margin-bottom: 2rem;
+
+}
+

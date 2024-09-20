@@ -1,0 +1,238 @@
+.team h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 7%;
+   }
+   .team h1 span {
+    color: #4028bd;
+    margin-left: 15px;
+   }
+   .team h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #4028bd;
+    display: block;
+    position: relative;
+    bottom: 15px;
+   }
+   .team-box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 15px;
+   }
+   .profile {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+   }
+   .profile:hover {
+    border-radius: 20px;
+    height: 380px;
+   }
+   .profile img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: 0.4s;
+   }
+   .profile:hover img {
+    border-radius: 20px;
+    margin-top: -230px;
+   }
+   .info {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.3s;
+   }
+   
+   .profile:hover .info {
+    top: 60%;
+
+   }
+   .members-name {
+    color: #4028bd;
+    margin-bottom: 15px;
+   }
+   .bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+
+
+   }
+   .profile p {
+    color: black;
+   } 
+   .team-icon i{
+    color: #4028bd;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+   }
+   .team-icon i:hover {
+    color: orange;
+   }
+   .team {
+    width: 100%;
+    height: 100vh;
+    background-color: #f1c2bf;
+    margin-top: 70px;
+   }
+
+
+   @media (max-width:576px) {
+  
+       .profile img {
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        transition: 0.4s;
+       }
+       .profile:hover img {
+        /* border-radius: 20px; */
+        margin-top: -200px;
+       }
+       .profile:hover {
+        /* border-radius: 20px; */
+        height: 430px;
+       }
+
+       .bio {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 10px auto;
+    
+    
+       }
+}
+
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+:root{
+    --btn-color:#e58f00;
+    --about-sec:#1d1d23;
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+outline: none;
+text-decoration: none;
+font-family: 'Roboto', sans-serif;
+transition: 0.5s;
+text-transform: capitalize;
+}
+html{
+scroll-behavior: smooth;
+}
+.header{
+/* padding: 1rem 2%; */
+position: static;
+left: 0;
+right: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+top: 0;
+background: #1d1d23;
+}
+.logo img{
+width: 80px;
+margin-left: 20px;
+}
+.navbar a{
+color: white;
+margin: 0.5rem;
+padding: 0.5rem;
+font-size: 1.5rem;
+}
+
+ @media (max-width:576px) {
+   
+    .navbar a{
+        color: white;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 15px;
+        display: block;
+        scroll-snap-align: hide;
+        }
+        .header{
+            padding: 1rem 7%;
+            position: static;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+            top: 0;
+            background: #1d1d23;
+            }
+        
+    
+} 
+
+.navbar a:hover{
+ color: orange;
+}
+
+.icons div:hover{
+cursor: pointer;
+}
+
+.icons a{
+color: white;
+padding: 0.6rem 1.5rem;
+border: 1px solid rgb(231, 91, 48);
+border-radius: 10px;
+font-size: 18px;
+transition: 0.5s;
+display: inline-block;
+margin-right: 20px;
+}
+.contact-btn:hover{
+transform: scale(1.1);
+background: var(--btn-color);
+border: 1px solid white;
+}
+
+#img5{
+animation: fadeInUp 2s ease infinite;
+}
+@keyframes fadeInUp {
+0%{
+  capacity: 0;
+  transform: translateY(50px);
+}
+100%{
+  capacity: 1;
+  transform: translateY(0px);
+}
+}
